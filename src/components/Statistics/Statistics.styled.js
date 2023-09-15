@@ -1,13 +1,19 @@
 import styled from 'styled-components';
 
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+}
+
 export const Container = styled.div`
-  /* display: flex; */
   margin-top: 30px;
+  margin-bottom: 50px;
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
-  /* text-align: center; */
+  border-radius: 4px;
 `;
 
 export const Title = styled.h2`
@@ -22,10 +28,11 @@ export const Item = styled.li`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   width: calc(100% / 5);
   text-align: center;
+  background-color: ${getRandomHexColor};
 `;
 
 export const Percentage = styled.span`
