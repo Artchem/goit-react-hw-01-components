@@ -8,9 +8,6 @@ import {
 } from './Statistics.styled.js';
 
 export const Statistics = ({ title, stats }) => {
-  //  "id": "id-1", "label": ".docx", "percentage": 22
-  //   console.log(stats[1].label);
-
   return (
     <Container>
       {title && <Title>{title}</Title>}

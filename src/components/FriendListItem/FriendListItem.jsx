@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Item, Name, Status } from './FriendListItem.styled';
 
 export const FriendListItem = ({ friends }) => {
-  console.log(friends);
+  //   console.log(friends);
 
   return friends.map(el => (
     <Item key={el.id}>

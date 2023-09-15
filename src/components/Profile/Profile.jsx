@@ -11,7 +11,7 @@ import {
 } from './Profile.styled';
 
 export const Profile = props => {
-  console.log(props);
+  // console.log(props);
   const {
     username,
     tag,
